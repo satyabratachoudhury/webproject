@@ -8,7 +8,7 @@ const Todo=require('./model/todo');
 
 const app=express();
 
-const port=process.env.PORT||27017;
+const port=process.env.PORT || 27017;
 
 
 
@@ -79,6 +79,6 @@ app.get("/about",(req,res)=>{
 
 
 app.listen(port, ()=>{
-    console.log("server is live",port);
+    console.log(`listening to the port no at ${port}`);
 });
 
